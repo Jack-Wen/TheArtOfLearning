@@ -36,7 +36,6 @@
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117733415181.jpg)
 
 
-
 #### 3.1 为什么使用Markdown？
 
 学过一些HTML、CSS基础的同学一定清楚，CSS的出现是为了使内容和样式相分离，如果要改样式只需改动CSS即可。同样Markdown出现的根本目的也是使书写内容与实际展现样式相分离，书写者只需更专注于书写本身，只需通过Markdown标记语言来分清文章层次结构，而无需把过多精力浪费在重复的排版中。
@@ -85,8 +84,6 @@ Markdown Here设置界面内可以配置你希望文本渲染成的CSS样式。�
     在页面「个人面板」-->「个人中心」-->「秘钥管理」中有显示，如下图）、图片URL前缀（如下图）
 
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117734545946.jpg)
-
-
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117734877815.jpg)
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117735113096.jpg)
 
@@ -99,7 +96,7 @@ Markdown Here设置界面内可以配置你希望文本渲染成的CSS样式。�
     2.图床设置
     
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117735904899.jpg)
-    添加本地图片上传服务（图床）
+ **   添加本地图片上传服务（图床）**
     
     1.名称：随心所欲，你自己起个名字就行；
     2.API地址：一定要填写你在七牛上申请存储空间机房对应的API接口。
@@ -115,7 +112,6 @@ Markdown Here设置界面内可以配置你希望文本渲染成的CSS样式。�
     7.验证：填完之后，点击「验证」，如果完全按照上述步骤，
     你一次就能通过！至此，恭喜你，你已经成功了99%了。
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117737005484.jpg)
-
 
 #### 4.3 配置Markdown Here
 
@@ -143,7 +139,6 @@ Markdown Here设置界面内可以配置你希望文本渲染成的CSS样式。�
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117738336036.jpg)
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117738468521.jpg)
 
-
     自动上传图片
     复制粘贴发布
     
@@ -151,7 +146,6 @@ Markdown Here设置界面内可以配置你希望文本渲染成的CSS样式。�
     2.然后打开打开微信公众号后台素材库的编辑器，粘贴。
     （不止是微信公众号哦，知乎，新浪微博发表头条，简书这些个通吃）；
     3.Ctrl+Alt+M 一键渲染CSS样式；
-
 
 ![](http://oe7mrvlxa.bkt.clouddn.com/15117738918389.jpg)
 
