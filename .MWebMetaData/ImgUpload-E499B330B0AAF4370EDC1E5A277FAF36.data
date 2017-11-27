@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>E4DFED1363431AEA898E8C8B88CCF410</key>
+	<array>
+		<dict>
+			<key>localURL</key>
+			<string>media/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png</string>
+			<key>remoteURL</key>
+			<string>http://oe7mrvlxa.bkt.clouddn.com/大话数据结构思维导图.png</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.png</string>
+			<key>remoteURL</key>
+			<string>http://oe7mrvlxa.bkt.clouddn.com/设计模式.png</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/PHP%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF%E5%9B%BE.png</string>
+			<key>remoteURL</key>
+			<string>http://oe7mrvlxa.bkt.clouddn.com/PHP学习线路图.png</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/Python%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE.png</string>
+			<key>remoteURL</key>
+			<string>http://oe7mrvlxa.bkt.clouddn.com/Python学习路线图.png</string>
+		</dict>
+	</array>
+	<key>selectedItem</key>
+	<string>E4DFED1363431AEA898E8C8B88CCF410</string>
+</dict>
+</plist>
