@@ -11,11 +11,10 @@ class MoveFiles
 {
 
 
-//    public $strOriginalDir = '/Users/baidu/Downloads/BaiDuYunDownload/樊登读书会/2017年';
-//    public $strDestinationPath = '/Users/baidu/Downloads/BaiDuYunDownload/樊登读书会/2015/';
-
     public function exec()
     {
+//        $strOriginalDir = '/Users/baidu/Downloads/BaiDuYunDownload/每天听本书mp3/test';
+//        $strDestinationDir = '/Users/baidu/Downloads/BaiDuYunDownload/每天听本书mp3';
         global $argc, $argv;
 
         if (empty($argv[1])) {
@@ -27,16 +26,17 @@ class MoveFiles
         $strOriginalDir = $argv[1];
         $strDestinationDir = $argv[2];
 
-        self::moveAllFiles($strOriginalDir, $strDestinationDir);
+        $arrFiles = self::readAllFiles($strOriginalDir);
+        self::moveAllFiles($arrFiles, $strDestinationDir);
     }
 
     /**
      * 将指定文件夹下的所有文件移动到新文件夹下
      *
      * @param $strOriginalDir
-     * @param $strDestinationDir
+     * @return $array
      */
-    public function moveAllFiles($strOriginalDir, $strDestinationDir)
+    public function readAllFiles($strOriginalDir)
     {
         $result = array();
         $handle = opendir($strOriginalDir);
@@ -46,7 +46,7 @@ class MoveFiles
                 if ($file != '.' && $file != '..') {
                     $cur_path = $strOriginalDir . DIRECTORY_SEPARATOR . $file;
                     if (is_dir($cur_path)) {
-                        $result['dir'][$cur_path] = read_all_dir($cur_path);
+                        $result['dir'][$cur_path] = self::readAllFiles($cur_path);
                     } else {
                         $result['file'][] = $cur_path;
 
@@ -56,11 +56,17 @@ class MoveFiles
             }
             closedir($handle);
         }
+        return $arrFiles;
+    }
+
+    public function moveAllFiles($arrFiles, $strDestinationDir)
+    {
+
         foreach ($arrFiles as $key => $value) {
             $pathInfo = pathinfo($value);
             $fileName = $pathInfo[basename];
             echo "$fileName\n";
-            rename($value, $strDestinationDir . $fileName);
+            rename($value,  $strDestinationDir.'/'.$fileName);
 
         }
     }
@@ -70,4 +76,3 @@ class MoveFiles
 
 $test = new MoveFiles();
 $test->exec();
-exit(0);
